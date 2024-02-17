@@ -1,3 +1,5 @@
+import * as dgram from 'dgram';
+
 declare class BattleEyeClient {
     socket: dgram.Socket;
     messageHandler: (message: string) => void;
@@ -12,7 +14,7 @@ declare class BattleEyeClient {
      * @param port BattlEye server port
      * @param password BattlEye server password
      */
-    constructor(ip: string, port: number, password: string, messageTimeout: number): void;
+    constructor(ip: string, port: number, password: string, messageTimeout: number);
 
     /**
      * Connect to the BattlEye server
