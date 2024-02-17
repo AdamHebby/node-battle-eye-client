@@ -2,10 +2,20 @@ import * as dgram from 'dgram';
 
 declare class BattleEyeClient {
     socket: dgram.Socket;
-    messageHandler: (message: string) => void;
-    timeoutHandler: () => void;
     loggedIn: boolean;
     error: boolean;
+    ip: string;
+    port: number;
+    password: string;
+    sequenceNumber: number;
+    lastResponse: number;
+    lastCommand: number;
+    interval: NodeJS.Timeout;
+    multipacket: Array<number, string>;
+    messageTimeout: number;
+
+    messageHandler: (message: string) => void;
+    timeoutHandler: () => void;
 
     /**
      * Create a new BattleEyeClient instance, does not connect to the server
@@ -31,7 +41,7 @@ declare class BattleEyeClient {
     /**
      * Close the connection to the BattlEye server
      */
-    close(): void;
+    public close(): void;
 }
 
 export = BattleEyeClient;
