@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electronstorm/battle-eye-client.git"
+    "url": "git+https://github.com/AdamHebby/battle-eye-client.git"
   },
   "author": "Colin Wüst <colin.wuest@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/electronstorm/battle-eye-client/issues"
+    "url": "https://github.com/AdamHebby/battle-eye-client/issues"
   },
-  "homepage": "https://github.com/electronstorm/battle-eye-client#readme",
+  "homepage": "https://github.com/AdamHebby/battle-eye-client#readme",
   "dependencies": {
     "buffer-crc32": "^0.2.5"
   }
