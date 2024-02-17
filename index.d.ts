@@ -11,7 +11,7 @@ declare class BattleEyeClient {
     lastResponse: number;
     lastCommand: number;
     interval: NodeJS.Timeout;
-    multipacket: Array<number, string>;
+    multipacket: Array<string>;
     messageTimeout: number;
 
     messageHandler: (message: string) => void;
